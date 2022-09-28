@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>The King</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body>
+
+    <!--Carrito-->
+    <div id="general" class="carrito navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a id="titulo" class="navbar-brand" href="#">The King Suspension</a>
+            <div class="div__input input-group rounded">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <button id="notificacion" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <i class="fa-solid fa-cart-shopping" class="navbar-toggler-icon"><span id="contador">0</span></i>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tu Compra</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div id="listcar">
+
+                    </div>
+                    <p>Cantidad Total de Productos: <span id="cantidadtotal"></span></p>
+                    <p>Precio Total: <span id="preciototal"></span></p>
+                    <button id="vaciar" class="boton btn btn-success" type="submit">Vaciar</button>
+                    <button id="fin" class="boton btn btn-success" type="submit">Finalizar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--menu-->
+    <header>
+        <nav id="nav">
+            <ul class="menu">
+                <li class="menu__link"><a href="./Index.html">INICIO</a></li>
+                <li class="menu__link"><a href="./Servicios.html">SERVICIOS</a></li>
+                <li class="menu__link"><a href="./productos.html">PRODUCTOS</a></li>
+                <li class="menu__link"><a href="./Contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <img src="./Img/fondo.jpeg" alt="Logo" class="header__logo">
+    </header>
+
+    <!-- Servicios -->
+    <Article id="servicios">
+        <h1 class="art__h1">Nuestros Servicios</h1>
+
+        <div id="carouselExampleControls" class="carousel slide     mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="container">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <h1 class="mb-5 title">206 Con Suspension Neumatica</h1>
+                                <p>Unos de los trabajos mas destacados que se le realizó motor, caja, araña 50mm arriba,
+                                    solucionando perdidas de aceite x reten de semieje. Modificacion de buches, ventanas
+                                    de palier y extremos de direccion todo cerrado en
+                                    su totalidad con chapa de 3mm y obviamente sellados y pintados con codigo original
+                                    del auto. Modificaciones en cazoletas y crapodinas para llegar a esa altura
+                                    delantera sin necesidad de modificar el amortiguador original
+                                    Castor. Modificaciones en eje trasero y soporte de pulmon para llegar a esa altura y
+                                    rodar todo desinflado. Todo sacrificio tiene su recompensa y como siempre decimos,
+                                    la prolijidad ante todo</p>
+                                <button type="button" class="btn text-white" style="background-color:#ca770b;">Nuestros
+                                    Productos</button>
+                            </div>
+                            <div class="col d-sm-block d-none col-sm-6 col-md-4"><img src="./Img/206.jpg" alt=""
+                                    class="art__img"></div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <h1 class="mb-5">Suspension regulable</h1>
+                                <p>Se realizo trabajo de motor, caja y araña levantados 6cm!! Altura toda enrroscada!!
+                                    Realizamos todo tipos de modificaciones, ventanas en chasis, levantamientos de
+                                    motor, cajas y arañas, buches y trochas, instalación y reinstalación
+                                    de neumaticas, suspenciones fijas y regulables. No te quedes con las ganas!
+                                    Consultanos y llévate el auto así de explotado.</p>
+                                <button type="button" class="btn text-white" style="background-color:#ca770b;">Nuestros
+                                    Productos</button>
+                            </div>
+                            <div class="col d-sm-block d-none col-sm-6 col-md-4"><img src="./Img/Saveiro.jpg" alt=""
+                                    class="art__img"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <h1 class="mb-5 title">Venta de Suspension Neumatica</h1>
+                                <p>En esta ocasión le mostramos un trabajo realizado por nuestros colegas de
+                                    @fides.performance al cual le tuvimos el agrado de vender un kit de suspensión
+                                    neumática castor y ellos se encargaron de la instalación! Muchas gracias
+                                    chicos por confiar en nuestros productos!</p>
+                                <button type="button" class="btn text-white" style="background-color:#ca770b;">Nuestros
+                                    Productos</button>
+                            </div>
+                            <div class="col d-sm-block d-none col-sm-6 col-md-4"><img src="./Img/golfgti.jpg" alt=""
+                                    class="art__img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="flecha carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </Article>
+
+    <!--Barra de promo-->
+    <section id="promo">
+        <div class="meli">
+            <img alt=""
+                src="https://http2.mlstatic.com/storage/mshops-appearance-api/resources/icons/payment-methods/debit-card-v1.svg">
+            Tarjeta de debito
+            <div>
+                <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods#debit-card" target="_self" rel=""
+                    id="view-more" modal_title="Medios de pago" data-title="Medios de pago" class="link__medios">Ver
+                    más</a>
+            </div>
+        </div>
+        <div class="meli">
+            <img alt=""
+                src="https://http2.mlstatic.com/storage/mshops-appearance-api/resources/icons/payment-methods/credit-card-v1.svg">
+            Pagas en Cuotas
+            <div>
+                <a href="https://www.mercadolibre.com.ar/gz/promociones-bancos" target="_self" rel="" id="view-promos"
+                    modal_title="Promociones bancarias" data-title="Promociones bancarias">Ver promociones bancarias</a>
+            </div>
+        </div>
+        <div class="meli"><img alt=""
+                src="https://http2.mlstatic.com/storage/mshops-appearance-api/resources/icons/payment-methods/payment-agreement-v1.svg">
+            Efectivo
+            <div>
+                <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods#payment-agreement" target="_self"
+                    rel="" id="view-more" modal_title="Medios de pago" data-title="Medios de pago"
+                    class="link__medios">Ver más</a>
+            </div>
+        </div>
+        <div class="meli"><img alt=""
+                src="https://http2.mlstatic.com/storage/mshops-appearance-api/resources/icons/payment-methods/view-more-v1.svg">
+            Medios de pago
+            <div>
+                <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods" target="_self" rel="" id="view-more"
+                    modal_title="Medios de pago" data-title="Medios de pago" class="link__medios">Ver todos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- productos -->
+    <section>
+
+        <h1 class="productos__h1">Nuestros Productos</h1>
+        <div id="list__art">
+            <!--Se agrego doom desde Js-->
+        </div>
+    </section>
+
+    <!--Contactos-->
+    <h1 class="section__h1">Contacto</h1>
+
+    <div id="contact">
+        <div class="contact__container">
+
+            <form class="form" method="post" target="_blank">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                <input type="text" class="nombre" placeholder="Nombre">
+
+                <input type="text" class="apellido" placeholder="Apellido">
+
+                <input type="tel" class="telf" name="phone" minlength="10" maxlength="10" size="20" required
+                    placeholder="Codigo de area + Numero de celular">
+
+                <input type="email" class="email" placeholder="name@example.com">
+
+                <textarea name="message" class="msj" cols="38" rows="10" placeholder="Mensaje"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <div class="contact__info">
+
+                <h3>Nuestros Contacto</h3>
+                <p class="">Estamos abiertos a cualquier sugerencia o simplemente para hablar</p>
+
+                <div class="">
+                    <span class="fa fa-map-marker"></span>
+                </div>
+
+                <div class="">
+                    <a href=""> San Nicolas de los Arroyos </a>
+                </div>
+
+                <div class="">
+                    <span class="fa fa-phone"></span>
+                </div>
+
+                <div class="">
+                    <a href="tel://1234567920">+ 54 336 xxxxxx</a>
+                </div>
+
+                <div class="">
+                    <span class="fa fa-paper-plane"></span>
+                </div>
+
+                <div class="">
+                    <span>Email:</span> <a href="mailto:info@yoursite.com">info@thekingsuspension.com</a>
+                </div>
+
+
+                <div class="">
+                    <span class="fa fa-globe"></span>
+                </div>
+
+                <div class="">
+                    <p><span>Website</span> <a href="#">http://www.thekingsuspensiones.com</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo1">
+                    <img src="./Img/logo2.jpg" alt="" class="logo1 animate__animated animate__flipInX">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt voluptatem, quae
+                        aperiam architecto, tempore cumque, iste excepturi voluptate distinctio rem adipisci animi ab
+                        sapiente corrupti labore. Soluta, iure nesciunt.
+                    </p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Nuestros Trabajos</h2>
+                <a href="#">App desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">Ios Desarrollo</a>
+                <a href="#">Android desarrollo</a>
+            </div>
+            <div class="box__footer">
+                <h2>Desarrolos</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios de Desarrolos</a>
+            </div>
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.Facebook.com" target="e_blank" class="insta"><i class="fab fa-facebook-square"></i>
+                    Facebook</a>
+                <a href="https://www.Twitter.com" target="e_blank" class="twitter"><i class="fab fa-twitter-square"></i>
+                    Twitter</a>
+                <a href="https://ar.linkedin.com/" target="e_blank" class="linkedin"><i class="fab fa-linkedin"></i>
+                    Likendin</a>
+                <a href="https://www.instagram.com/" target="e_blank" class="insta"><i
+                        class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./main.js"></script>
+
+
+</body>
+
+
+</html>
