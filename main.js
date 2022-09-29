@@ -220,9 +220,9 @@ function eventoTres() {
             result.dismiss === Swal.DismissReason.cancel
         ) {
             swalWithBootstrapButtons.fire(
-                'Cancelled',
-                'Your imaginary file is safe :)',
-                'error'
+                'Cancelado',
+                'Tus Productos Estan Guardado! :)',
+                ''
             )
         }
     })
